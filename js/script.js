@@ -24,7 +24,7 @@ const countdownFunction = setInterval(() => {
     // If the countdown is over, display a message
     if (distance < 0) {
         clearInterval(countdownFunction);
-        document.querySelector(".countdown").innerHTML = "WE'RE LIVE!";
+        document.querySelector(".countdown").innerHTML = "NOUS SOMMES EN DIRECT !";
     }
 }, 1000);
 
@@ -32,6 +32,6 @@ const countdownFunction = setInterval(() => {
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
     const email = document.getElementById("email").value;
-    alert(`Thank you! We'll notify you at ${email} when we launch.`);
+    alert(`Nous vous remercions ! Nous vous informerons à l'adresse suivante ${email} au moment du lancement.`);
     document.getElementById("email").value = ""; // Clear the input
 });
